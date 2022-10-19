@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.drawerlayout.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawer_layout"
+    tools:context=".MainActivity"
+    tools:openDrawer="start"
+    >
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_marginTop="56dp"
+        android:layout_height="wrap_content"
+        android:fillViewport="true">
+
+        <androidx.coordinatorlayout.widget.CoordinatorLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <!-- ¿A DOMICILIO O PARA LLEVAR? -->
+            <!--imagen 1!-->
+            <ImageView
+                android:id="@+id/image_1"
+                android:layout_width="344dp"
+                android:layout_height="167dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="121dp"
+                android:background="@drawable/burrito" />
+
+            <TextView
+                android:id="@+id/a_domicilio"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="56dp"
+
+                android:gravity="top"
+                android:text="@string/comer"/>
+
+            <!--Rectanguloveotaquito-->
+            <!--Icono comida -->
+            <ImageView
+                android:id="@+id/fast_food_i"
+                android:layout_width="78dp"
+                android:layout_height="62dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-11dp"
+                android:layout_marginTop="109.97dp"
+                android:background="@drawable/fast_food_icon"
+                android:rotation="-33" />
+
+            <!--Texto ordena ya-->
+            <!--rectangulo verde ya-->
+            <Button
+                android:id="@+id/ordenayaa"
+                android:layout_width="344dp"
+                android:layout_height="45dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="283dp"
+                android:background="@color/verdetaquito"
+                android:text="@string/ordenayaa">
+
+            </Button>
+
+
+            <View
+                android:id="@+id/rectangle_2"
+                android:layout_width="151dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="228dp"
+                android:layout_marginTop="121dp"
+                android:background="@color/black" />
+
+            <TextView
+                android:id="@+id/orden_de_burrito"
+                android:layout_width="135dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="240dp"
+                android:layout_marginTop="128dp"
+                android:gravity="top"
+                android:text="@string/ordenaBurrito"
+                android:textColor="#FDFCFC" />
+
+            <!--Segundo Plato-->
+            <!--segunda imagen-->
+            <ImageView
+                android:id="@+id/item2"
+                android:layout_width="341dp"
+                android:layout_height="192dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="36dp"
+                android:layout_marginTop="340dp"
+                android:background="@drawable/taco" />
+            <View
+                android:id="@+id/rectangle_segundaimagen"
+                android:layout_width="151dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="226dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="340dp"
+                android:background="@color/black"
+                />
+            <TextView
+                android:id="@+id/orden_de_tacos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="244dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="347dp"
+                android:text="@string/orden_de_ta"
+                android:gravity="top"
+                android:textColor="#FDFCFC"
+                />
+
+            <!--Icono -->
+            <ImageView
+                android:id="@+id/fast_food_i2"
+                android:layout_width="78.13dp"
+                android:layout_height="66.06dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-11dp"
+                android:layout_marginTop="320.97dp"
+                android:background="@drawable/fast_food_icon"
+                android:rotation="-33" />
+            <!--Precio-->
+            <View
+                android:id="@+id/group_24"
+                android:layout_width="339dp"
+                android:layout_height="29dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="38dp"
+                android:layout_marginTop="540dp"
+                 />
+            <TextView
+                android:id="@+id/precio"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="545dp"
+                android:layout_marginLeft="50dp"
+                android:layout_height="wrap_content"
+                android:text="@string/precio" />
+            <!--Precio-->
+            <TextView
+                android:id="@+id/some_id"
+                android:layout_width="33dp"
+                android:layout_marginTop="545dp"
+                android:layout_marginLeft="110dp"
+                android:layout_height="wrap_content"
+                android:text="5.99" />
+            <!--boton-->
+            <Button
+                android:id="@+id/button_ordenar_taco"
+                android:text="Ordenar"
+                android:layout_width="109dp"
+                android:layout_height="29dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="268dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="540dp"
+                android:background="@color/verdetaquito"/>
+            <!--tercera imagen-->
+
+            <ImageView
+                android:id="@+id/image_3"
+                android:layout_width="335dp"
+                android:layout_height="191dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="587dp"
+                android:background="@drawable/combofamiliar"/>
+            <View
+                android:id="@+id/rectangle_combofamiliar"
+                android:layout_width="151dp"
+                android:layout_height="30dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="224dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="586dp"
+                android:background="@color/black"
+                />
+            <TextView
+                android:id="@+id/combo_famil"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="245dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="592dp"
+                android:text="@string/combo_famil"
+                android:gravity="top"
+                android:textColor="#FDFCFC"
+                />
+
+
+            <ImageView
+                android:id="@+id/fast_food_i3"
+                android:layout_width="78.13dp"
+                android:layout_height="66.06dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="-11dp"
+                android:layout_marginTop="578.97dp"
+                android:background="@drawable/fast_food_icon"
+                android:rotation="-33" />
+
+
+
+
+            <View
+            android:id="@+id/group_10.0"
+            android:layout_width="339dp"
+            android:layout_height="29dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="38dp"
+            android:layout_marginTop="540dp"
+            />
+            <!--Precio-->
+            <TextView
+                android:id="@+id/precio2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="785dp"
+                android:text="Precio" />
+
+            <TextView
+                android:id="@+id/some_id2"
+                android:layout_width="wrap_content"
+                android:layout_marginTop="785dp"
+                android:layout_marginLeft="110dp"
+                android:layout_height="wrap_content"
+                android:text="11.00" />
+            <!--boton-->
+            <Button
+                android:id="@+id/buttonFamiliar"
+                android:text="Ordenar"
+                android:layout_width="109dp"
+                android:layout_height="29dp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="268dp"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="785dp"
+                android:background="@color/verdetaquito"/>
+        </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+    </androidx.core.widget.NestedScrollView>
+    <include
+        layout= "@layout/app_bar_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+    <com.google.android.material.navigation.NavigationView
+        android:id="@+id/nav_view"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/nav_header_main"
+        app:menu="@menu/activity_main_drawer"
+        >
+
+    </com.google.android.material.navigation.NavigationView>
+
+
+</androidx.drawerlayout.widget.DrawerLayout>

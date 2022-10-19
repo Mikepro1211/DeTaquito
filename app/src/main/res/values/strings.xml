@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">DeTaquito</string>
+    <string name="navigation_drawer_open">Open</string>
+    <string name="navigation_drawer_close">Close</string>
+    <string name="para_comer_aqu_o_para_llevar_llevar">¿Para comer aquí o para llevar llevar?</string>
+    <string name="title_activity_locaciones">Locaciones</string>
+
+
+    <!--String de MainActivity-->
+    <string name="comer">¿Para comer aquí o para llevar llevar?</string>
+    <string name="ordenayaa">Ordena Ya!!</string>
+    <string name="ordenaBurrito">Orden de Burrito</string>
+    <string name="precio">Precio</string>
+    <string name="orden_de_ta">Orden de Tacos</string>
+    <string name="combo_famil">Combo Familiar</string>
+
+    <!--String de Menu-->
+    <string name="nuestroMenu">Nuestro Menu</string>
+    <string name="menu">MENU</string>
+    <string name="sopa_tortilla">Sopa de Tortilla </string>
+    <string name="torta_mexicana">Torta Mexicana</string>
+    <string name="boton_agregar">Agregar</string>
+    <string name="quesadillas">Quesadillas</string>
+    <string name="enchilada">Enchilada</string>
+    <string name="posole">Posole</string>
+
+</resources>
