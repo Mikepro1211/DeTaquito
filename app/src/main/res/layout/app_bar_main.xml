@@ -18,6 +18,35 @@
         android:background="?attr/colorPrimary"
         app:layout_scrollFlags ="scroll|enterAlways"
         />
+
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="150dp"
+            android:layout_height="36dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="120dp"
+            android:layout_marginTop="-48dp"
+            android:fontFamily="sans-serif-black"
+            android:gravity="top"
+            android:text="@string/titulo"
+            android:textColor="@color/black"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+
+        <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/animationView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+            android:layout_marginTop="-40dp"
+            android:layout_marginLeft="60dp"
+        android:layout_alignParentEnd="true"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/animacion0"
+        app:lottie_url="layout/raw" />
         <!-- image (4) 1 -->
         <ImageButton
             android:id="@+id/btncarritoCompra"
@@ -41,6 +70,7 @@
         android:background="?attr/colorPrimary"
         android:minHeight="?attr/actionBarSize"
         android:theme="?attr/actionBarTheme" />
+
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
