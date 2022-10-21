@@ -35,14 +35,16 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
         btncarrito.setOnClickListener {
             Toast.makeText(this,"Hola papu",Toast.LENGTH_SHORT).show()
         }
+
+        /*
         val compra1 = findViewById<Button>(R.id.btnagregar_uno)
         compra1.setOnClickListener {
             val intento =  Intent(this,compra::class.java)
             startActivity(intento)
         }
+
+*/
     }
-
-
     override fun onNavigationItemSelected(item: MenuItem): Boolean {
         when(item.itemId){
             R.id.nav_item_one -> {

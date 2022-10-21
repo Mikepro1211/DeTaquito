@@ -7,7 +7,7 @@
 
 
     <!--String de MainActivity-->
-    <string name="comer">¿Para comer aquí o para llevar llevar?</string>
+    <string name="comer">Order and eat</string>
     <string name="ordenayaa">Ordena Ya!!</string>
     <string name="ordenaBurrito">ORDEN DE BURRITO</string>
     <string name="precio">Precio</string>

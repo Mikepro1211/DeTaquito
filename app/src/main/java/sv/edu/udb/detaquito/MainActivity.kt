@@ -16,9 +16,13 @@ import androidx.drawerlayout.widget.DrawerLayout
 import com.google.android.material.navigation.NavigationView
 
 class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListener {
+
     private lateinit var  drawer:DrawerLayout
     private lateinit var  toogle: ActionBarDrawerToggle
     override fun onCreate(savedInstanceState: Bundle?) {
+
+
+
         super.onCreate(savedInstanceState)
         //llamado al content view
         setContentView(R.layout.activity_main)
@@ -29,9 +33,14 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         drawer.addDrawerListener(toogle)
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         supportActionBar?.setHomeButtonEnabled(true)
+
+
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener (this)
         //Funcion carrito
+
+
+/*
         val btncarrito = findViewById<ImageButton>(R.id.btncarritoCompra)
         btncarrito.setOnClickListener {
             Toast.makeText(this,"Hola papu no tengo funcion",Toast.LENGTH_SHORT).show()
@@ -60,7 +69,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         }
 
 
-
+*/
 
     }
 
@@ -89,6 +98,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         return true
     }
 
+
+        /*
+
     override fun onPostCreate(savedInstanceState: Bundle?){
         super.onPostCreate(savedInstanceState)
         toogle.syncState()
@@ -107,4 +119,9 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
     }
 
 
+
+
+    //CONEXION A BASE DE DATOS
+
+*/
 }

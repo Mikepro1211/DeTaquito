@@ -6,7 +6,14 @@
     android:layout_height="match_parent"
     android:id="@+id/drawer_layout"
     tools:context=".Menu"
-    tools.openDrawer ="start">
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constrain15151"
+        android:layout_width="134dp"
+        android:layout_height="45dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        />
 
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
@@ -14,588 +21,687 @@
         android:layout_height="wrap_content"
         android:fillViewport="true">
 
-        <androidx.coordinatorlayout.widget.CoordinatorLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+       <androidx.constraintlayout.widget.ConstraintLayout
+           android:layout_width="match_parent"
+           android:layout_height="match_parent">
 
 
+           <ImageView
+               android:id="@+id/imageView"
+               android:layout_width="413dp"
+               android:layout_height="312dp"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:srcCompat="@drawable/fondoimagen"
+               tools:ignore="MissingConstraints"
+               tools:layout_editor_absoluteY="-72dp" />
 
-        <!--Imagen Principal-->
-        <com.makeramen.roundedimageview.RoundedImageView
-            android:id="@+id/imageView12"
-            android:layout_width="375dp"
-            android:layout_height="200dp"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentBottom="true"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="15dp"
-            android:layout_marginTop="10dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentEnd="true"
-            android:padding="10dip"
-            android:src="@drawable/tacos"
-            android:scaleType="center"
-            app:riv_corner_radius_top_left="30dp"
-            app:riv_corner_radius_bottom_right="30dp"
-            app:riv_border_width="3dip"
-            app:riv_oval="false"
-            app:riv_border_color="@color/black"
-            />
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout"
+               android:layout_width="340dp"
+               android:layout_height="155dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginTop="156dp"
+               android:background="@drawable/fondo"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintHorizontal_bias="0.492"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:ignore="MissingConstraints">
+
+               <TextView
+                   android:id="@+id/textView10"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginBottom="52dp"
+                   android:text="Menú"
+                   android:textColor="#302f3c"
+                   android:textSize="30dp"
+                   android:textStyle="bold"
+
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent" />
+
+               <ImageView
+                   android:id="@+id/imageView5"
+                   android:layout_width="30dp"
+                   android:layout_height="30dp"
+                   android:layout_marginStart="16dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.872"
+                   app:srcCompat="@drawable/scooter_motorbike_bike_transport_icon_229646" />
+
+               <ImageView
+                   android:id="@+id/imageView11"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginStart="244dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.872"
+                   app:srcCompat="@drawable/star_icon_icons_com_73394" />
+
+               <ImageView
+                   android:id="@+id/imageView12"
+                   android:layout_width="25dp"
+                   android:layout_height="25dp"
+                   android:layout_marginStart="120dp"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.872"
+                   app:srcCompat="@drawable/clock_icon_128908" />
+
+               <TextView
+                   android:id="@+id/textView19"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="60dp"
+                   android:layout_marginBottom="20dp"
+                   android:text="Gratis"
+                   android:textColor="@color/black"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent" />
+
+               <TextView
+                   android:id="@+id/textView20"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="156dp"
+                   android:layout_marginBottom="20dp"
+                   android:text="10-20 min"
+                   android:textColor="@color/black"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent" />
+
+               <TextView
+                   android:id="@+id/textView21"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginStart="276dp"
+                   android:layout_marginBottom="20dp"
+                   android:text="4.8"
+                   android:textColor="@color/black"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintStart_toStartOf="parent" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout3"
+               android:layout_width="120dp"
+               android:layout_height="120dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginTop="96dp"
+               android:background="@drawable/fondo2"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toTopOf="parent"
+               tools:ignore="MissingConstraints">
+
+               <ImageView
+                   android:id="@+id/imageView2"
+                   android:layout_width="101dp"
+                   android:layout_height="106dp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/taquito" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout2"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="12dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+               tools:ignore="DuplicateIds,MissingConstraints">
+
+               <ImageView
+                   android:id="@+id/imageView19"
+                   android:layout_width="172dp"
+                   android:layout_height="154dp"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/combo" />
+
+               <TextView
+                   android:id="@+id/textView22"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_marginTop="124dp"
+                   android:text="Combo Burrito"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.39"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView19" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constrain15200"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginTop="164dp"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView19"
+                   app:layout_constraintVertical_bias="0.111"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/textView2645"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/text2566"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="12dp"
+               android:layout_marginTop="12dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintStart_toEndOf="@+id/constraintLayout2"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout"
+               tools:ignore="DuplicateIds,MissingConstraints">
+
+               <ImageView
+                   android:id="@+id/imageView20"
+                   android:layout_width="163dp"
+                   android:layout_height="133dp"
+                   android:layout_marginTop="4dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/nachos1" />
+
+               <TextView
+                   android:id="@+id/textView23"
+                   android:layout_width="74dp"
+                   android:layout_height="30dp"
+                   android:layout_marginTop="124dp"
+                   android:text="Nacho"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constra400"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView20"
+                   app:layout_constraintVertical_bias="0.909"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/holamundo4001"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout252"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="260dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+               <ImageView
+                   android:id="@+id/imageView21"
+                   android:layout_width="165dp"
+                   android:layout_height="124dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/taco12" />
+
+               <TextView
+                   android:id="@+id/textView24"
+                   android:layout_width="138dp"
+                   android:layout_height="27dp"
+                   android:layout_marginStart="20dp"
+                   android:layout_marginTop="124dp"
+                   android:text="Combo Burrito"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/holamo4002"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView21"
+                   app:layout_constraintVertical_bias="0.912"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/textView2665"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout260"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginTop="260dp"
+               android:layout_marginEnd="28dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+               <ImageView
+                   android:id="@+id/imageView22"
+                   android:layout_width="170dp"
+                   android:layout_height="138dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.0"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/combo1" />
+
+               <TextView
+                   android:id="@+id/textView25"
+                   android:layout_width="133dp"
+                   android:layout_height="33dp"
+                   android:layout_marginTop="124dp"
+                   android:text="Combo tortas"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView22" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/const0532"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.6"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView22"
+                   app:layout_constraintVertical_bias="0.912"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/textView26552"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout280"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="20dp"
+               android:layout_marginTop="16dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout252">
+
+               <TextView
+                   android:id="@+id/textView255"
+                   android:layout_width="67dp"
+                   android:layout_height="28dp"
+                   android:layout_marginTop="124dp"
+                   android:text="Tacos"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.512"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView23" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/humano12345"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginBottom="16dp"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/textView2664"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+               <ImageView
+                   android:id="@+id/imageView23"
+                   android:layout_width="178dp"
+                   android:layout_height="118dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/taco13" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayo521"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginTop="16dp"
+               android:layout_marginEnd="28dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout260">
+
+               <TextView
+                   android:id="@+id/textView22559"
+                   android:layout_width="93dp"
+                   android:layout_height="32dp"
+                   android:layout_marginTop="120dp"
+                   android:text="Coca cola"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.456"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView24" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/holamundo3001"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginBottom="16dp"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.525"
+                   app:layout_constraintStart_toStartOf="parent"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/textView2670"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+               <ImageView
+                   android:id="@+id/imageView24"
+                   android:layout_width="119dp"
+                   android:layout_height="123dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/_a3ac1192f3355_80383532151379996119334563" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout15260"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginStart="16dp"
+               android:layout_marginTop="24dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintStart_toStartOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout280">
+
+               <TextView
+                   android:id="@+id/textView259"
+                   android:layout_width="133dp"
+                   android:layout_height="33dp"
+                   android:layout_marginTop="124dp"
+                   android:text="Vaso Pepsi"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.512"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView25" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constrai601"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:layout_marginBottom="16dp"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.525"
+                   app:layout_constraintStart_toStartOf="parent"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/textView26458"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+               <ImageView
+                   android:id="@+id/imageView25"
+                   android:layout_width="125dp"
+                   android:layout_height="140dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/kisspng_soft_drink_pepsi_one_coca_cola_pepsi_max_pepsi_5a6a1a1df3e769_7404641115169029419991" />
+           </androidx.constraintlayout.widget.ConstraintLayout>
+
+           <androidx.constraintlayout.widget.ConstraintLayout
+               android:id="@+id/constraintLayout152602"
+               android:layout_width="174dp"
+               android:layout_height="227dp"
+               android:layout_alignParentStart="true"
+               android:layout_alignParentTop="true"
+               android:layout_alignParentEnd="true"
+               android:layout_marginTop="268dp"
+               android:layout_marginEnd="28dp"
+               android:background="@drawable/fondo3"
+               app:layout_constraintEnd_toEndOf="parent"
+               app:layout_constraintTop_toBottomOf="@+id/constraintLayout260">
+
+               <TextView
+                   android:id="@+id/textView25951"
+                   android:layout_width="133dp"
+                   android:layout_height="33dp"
+                   android:layout_marginTop="124dp"
+                   android:text="Ron con coca"
+                   android:textColor="@color/white"
+                   android:textSize="20dp"
+                   android:textStyle="bold"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.536"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/imageView26" />
+
+               <androidx.constraintlayout.widget.ConstraintLayout
+                   android:id="@+id/constrain3012"
+                   android:layout_width="134dp"
+                   android:layout_height="45dp"
+                   android:layout_alignParentStart="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_alignParentEnd="true"
+                   android:background="@drawable/fondo"
+                   app:layout_constraintBottom_toBottomOf="parent"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.525"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:layout_constraintVertical_bias="0.912"
+                   tools:ignore="DuplicateIds,MissingConstraints">
+
+                   <TextView
+                       android:id="@+id/textView26494"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="$4.99"
+                       android:textColor="@color/black"
+                       android:textSize="20dp"
+                       android:textStyle="bold"
+                       app:layout_constraintBottom_toBottomOf="parent"
+                       app:layout_constraintEnd_toEndOf="parent"
+                       app:layout_constraintStart_toStartOf="parent"
+                       app:layout_constraintTop_toTopOf="parent" />
+               </androidx.constraintlayout.widget.ConstraintLayout>
+
+               <ImageView
+                   android:id="@+id/imageView26"
+                   android:layout_width="100dp"
+                   android:layout_height="119dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent"
+                   app:srcCompat="@drawable/kisspng_rum_and_coke_cocktail_daiquiri_mojito_vodka_drink_5a8c1f22dedb09_4535352215191324509128" />
+
+           </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-
-        <!--Icono-->
-        <View
-            android:id="@+id/fast_food_i"
-            android:layout_width="78.13dp"
-            android:layout_height="66.06dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="2dp"
-            android:background="@drawable/fast_food_icon"
-            android:rotation="-33"/>
-
-            <TextView
-                android:id="@+id/titulo"
-                android:layout_width="90dp"
-                android:layout_height="36dp"
-                android:layout_alignParentLeft="true"
-                android:layout_alignParentTop="true"
-                android:layout_marginLeft="190dp"
-                android:layout_marginTop="-42dp"
-                android:fontFamily="sans-serif-black"
-                android:gravity="top"
-                android:text="@string/titulo"
-                android:textColor="@color/black"
-                android:textSize="20sp"
-                android:textStyle="bold" />
-v
+       </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-            <TextView
-            android:id="@+id/menu"
-            android:layout_width="90dp"
-            android:layout_height="36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="190dp"
-            android:layout_marginTop="230dp"
-            android:fontFamily="sans-serif-black"
-            android:gravity="top"
-            android:text="@string/menu"
-            android:textColor="@color/black"
-            android:textSize="20sp"
-            android:textStyle="bold" />
-
-
-        <!--seleccione categroia-->
-        <TextView
-            android:id="@+id/selecciona_"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="21dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="269dp"
-            android:gravity="top"
-            android:text="@string/nuestroMenu"
-            />
-        <!--MENU-->
-        <ImageView
-            android:id="@+id/imageView"
-            android:layout_width="100dp"
-            android:layout_height="80dp"
-            app:srcCompat="@drawable/taquito"
-            android:layout_marginLeft="100dp"
-            android:layout_marginTop="190dp"/>
-        <!--PRIMERA OPCION-->
-        <View
-            android:id="@+id/item_menu_uno"
-            android:layout_width="380dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="301dp"
-            android:background="@color/backgroundmenu"
-            />
-        <!--Imagen-->
-
-
-        <ImageView
-            android:id="@+id/image_menu_1"
-            android:layout_width="205.71dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginTop="301dp"
-            android:background="@drawable/sopadetortilla" />
-
-        <TextView
-            android:id="@+id/sopa_tortilla"
-            android:layout_width="142dp"
-            android:layout_height="24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="238dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="331dp"
-            android:text="@string/sopa_tortilla"
-            android:gravity="top"
-            android:textColor="@color/black"
-            />
-        <View
-            android:id="@+id/caja_1"
-            android:layout_width="96dp"
-            android:layout_height="70.32dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="386dp"
-            android:background="#ffff"
-            />
-        <TextView
-            android:id="@+id/precio_id_1"
-            android:layout_width="49.73dp"
-            android:layout_height="19.36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="274dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="396dp"
-            android:text="$2.00"
-            android:gravity="top"
-            android:textColor="@color/precio"
-            />
-
-        <Button
-            android:id="@+id/btnagregar_uno"
-            android:layout_width="96dp"
-            android:layout_height="36.58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="419.74dp"
-            android:background="@color/verdetaquito"
-            android:text="Agregar"
-            android:textColor="@color/white"
-            />
-        <!--Segunda opcion0-->
-        <View
-            android:id="@+id/item2menu"
-            android:layout_width="380dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="485dp"
-            android:background="@color/backgroundmenu"
-            />
-        <!--Imagen2-->
-        <ImageView
-            android:id="@+id/imagenitem2"
-            android:layout_width="205.71dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginTop="485dp"
-            android:background="@drawable/tortamexicana2" />
-        <!--Item 2-->
-        <View
-            android:id="@+id/group_29"
-            android:layout_width="96dp"
-            android:layout_height="70.32dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="264dp"
-            android:layout_marginTop="560dp"
-            android:background="#ffff"
-            app:layout_anchor="@+id/group_29"
-            app:layout_anchorGravity="top|center" />
-
-        <TextView
-            android:id="@+id/tortas_mexicana"
-            android:layout_width="142dp"
-            android:layout_height="24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="238dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="500dp"
-            android:text="@string/torta_mexicana"
-            android:gravity="top"
-            android:textColor="@color/black"
-            />
-        <TextView
-            android:id="@+id/precio_torta"
-            android:layout_width="49.73dp"
-            android:layout_height="19.36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="274dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="570dp"
-            android:text="$2.00"
-            android:textColor="@color/precio"
-            android:gravity="top"
-            />
-
-        <Button
-            android:id="@+id/btnagregar_torta"
-            android:layout_width="96dp"
-            android:layout_height="36.58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="595dp"
-            android:background="@color/verdetaquito"
-            android:text="@string/boton_agregar"
-            android:textColor="@color/white"
-            />
-
-        <!--tercera opcion0-->
-        <View
-            android:id="@+id/item3menu"
-            android:layout_width="380dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="675dp"
-            android:background="@color/backgroundmenu"
-            />
-        <!--Imagen2-->
-        <ImageView
-            android:id="@+id/imagenmenu3"
-            android:layout_width="205.71dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginTop="675dp"
-            android:background="@drawable/quesadillas" />
-        <!--Item 3-->
-        <View
-            android:id="@+id/menu3"
-            android:layout_width="96dp"
-            android:layout_height="70.32dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="264dp"
-            android:layout_marginTop="755dp"
-            android:background="#ffff"
-            app:layout_anchor="@+id/group_29"
-            app:layout_anchorGravity="top|center" />
-        <TextView
-            android:id="@+id/quesadilla"
-            android:layout_width="142dp"
-            android:layout_height="24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="238dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="695dp"
-            android:text="@string/quesadillas"
-            android:gravity="top"
-            android:textColor="@color/black"
-            />
-
-
-        <TextView
-            android:id="@+id/precio_quesadilla"
-            android:layout_width="49.73dp"
-            android:layout_height="19.36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="274dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="765dp"
-            android:text="$2.00"
-            android:textColor="@color/precio"
-            android:gravity="top"
-            />
-
-        <Button
-            android:id="@+id/btnagregar_quesadilla"
-            android:layout_width="96dp"
-            android:layout_height="36.58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="790dp"
-            android:background="@color/verdetaquito"
-            android:text="@string/boton_agregar"
-            android:textColor="@color/white"
-            />
-        <!--cuarta opcion0-->
-        <View
-            android:id="@+id/item4menu"
-            android:layout_width="380dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="865dp"
-            android:background="@color/backgroundmenu"
-            />
-        <!--Imagen4-->
-        <ImageView
-            android:id="@+id/imagenmenu4"
-            android:layout_width="205.71dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginTop="865dp"
-            android:background="@drawable/enchiladas" />
-        <!--text-->
-        <TextView
-            android:id="@+id/enchilada"
-            android:layout_width="142dp"
-            android:layout_height="24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="238dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="895dp"
-            android:text="@string/enchilada"
-            android:gravity="top"
-            android:textColor="@color/black"
-            />
-        <!--Item 3-->
-        <View
-            android:id="@+id/menu4"
-            android:layout_width="96dp"
-            android:layout_height="70.32dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="264dp"
-            android:layout_marginTop="940dp"
-            android:background="#ffff"
-            app:layout_anchor="@+id/group_29"
-            app:layout_anchorGravity="top|center" />
-
-        <TextView
-            android:id="@+id/some_id4"
-            android:layout_width="49.73dp"
-            android:layout_height="19.36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="274dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="950dp"
-            android:text="$2.00"
-            android:textColor="@color/precio"
-            android:gravity="top"
-            />
-
-        <Button
-            android:id="@+id/agregar_4"
-            android:layout_width="96dp"
-            android:layout_height="36.58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="972dp"
-            android:background="@color/verdetaquito"
-            android:text="Agregar"
-            android:textColor="@color/white"
-            />
-        <!--quinta opcion0-->
-        <View
-            android:id="@+id/item5menu"
-            android:layout_width="380dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1050dp"
-            android:background="@color/backgroundmenu"
-            />
-        <!--Imagen5-->
-        <ImageView
-            android:id="@+id/imagenmenu5"
-            android:layout_width="205.71dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginTop="1050dp"
-            android:background="@drawable/posole" />
-        <!--Item 4-->
-        <View
-            android:id="@+id/menu5"
-            android:layout_width="96dp"
-            android:layout_height="70.32dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="264dp"
-            android:layout_marginTop="1130dp"
-            android:background="#ffff"
-            app:layout_anchor="@+id/group_29"
-            app:layout_anchorGravity="top|center" />
-        <TextView
-            android:id="@+id/pozole"
-            android:layout_width="142dp"
-            android:layout_height="24dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="238dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1075dp"
-            android:text="@string/posole"
-            android:gravity="top"
-            android:textColor="@color/black"
-            />
-        <TextView
-            android:id="@+id/some_id5"
-            android:layout_width="49.73dp"
-            android:layout_height="19.36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="274dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1145dp"
-            android:text="$2.00"
-            android:gravity="top"
-            />
-
-        <Button
-            android:id="@+id/agregar_5"
-            android:layout_width="96dp"
-            android:layout_height="36.58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1165dp"
-            android:background="@color/cardview_dark_background"
-            android:text="Agregar"
-            android:textColor="@color/white"
-            />
-        <!--sexta opcion0-->
-        <View
-            android:id="@+id/item6menu"
-            android:layout_width="380dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1235dp"
-            android:background="@color/backgroundmenu"
-            />
-        <!--Imagen6-->
-        <ImageView
-            android:id="@+id/imagenmenu6"
-            android:layout_width="205.71dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginTop="1235dp"
-            android:background="@drawable/tlayula" />
-        <!--Item 6-->
-        <View
-            android:id="@+id/menu6"
-            android:layout_width="96dp"
-            android:layout_height="70.32dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="264dp"
-            android:layout_marginTop="1320dp"
-            android:background="#ffff"
-            app:layout_anchor="@+id/group_29"
-            app:layout_anchorGravity="top|center" />
-
-        <TextView
-            android:id="@+id/some_id6"
-            android:layout_width="49.73dp"
-            android:layout_height="19.36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="274dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1335dp"
-            android:text="$2.00"
-            android:textColor="@color/precio"
-            android:gravity="top"
-
-            />
-
-        <Button
-            android:id="@+id/agregar_6"
-            android:layout_width="96dp"
-            android:layout_height="36.58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1355dp"
-            android:background="@color/verdetaquito"
-            android:text="Agregar"
-            android:textColor="@color/white"
-            />
-        <!--septima opcion0-->
-        <View
-            android:id="@+id/item7menu"
-            android:layout_width="380dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="17dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1430dp"
-            android:background="@color/purple_700"
-            />
-        <!--Imagen6-->
-        <ImageView
-            android:id="@+id/imagenmenu7"
-            android:layout_width="205.71dp"
-            android:layout_height="172dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="17dp"
-            android:layout_marginTop="1430dp"
-            android:background="@color/verdetaquito" />
-        <!--Item 7-->
-        <View
-            android:id="@+id/menu7"
-            android:layout_width="96dp"
-            android:layout_height="70.32dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="264dp"
-            android:layout_marginTop="1480dp"
-            android:background="#ffff"
-            app:layout_anchor="@+id/group_29"
-            app:layout_anchorGravity="top|center" />
-
-        <TextView
-            android:id="@+id/some_id7"
-            android:layout_width="49.73dp"
-            android:layout_height="19.36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="274dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1490dp"
-            android:text="$2.00"
-            android:gravity="top"
-
-            />
-
-        <Button
-            android:id="@+id/agregar_7"
-            android:layout_width="96dp"
-            android:layout_height="36.58dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="264dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="1510dp"
-            android:background="@color/cardview_dark_background"
-            android:text="Agregar"
-            android:textColor="@color/white"
-            />
-
-
-
-
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
     </androidx.core.widget.NestedScrollView>
 
     <include
         layout= "@layout/app_bar_main"
         android:layout_width="match_parent"
         android:layout_height="match_parent"/>
+
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"
         android:layout_width="wrap_content"
