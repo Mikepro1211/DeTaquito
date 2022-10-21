@@ -5,7 +5,9 @@ import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
+import android.widget.Button
 import android.widget.ImageButton
+import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -29,11 +31,28 @@ class compra : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener (this)
 
+        //para datos  de tabla
+        val txt1 = findViewById<TextView>(R.id.txtRecibirProducto)
+        val txt2 = findViewById<TextView>(R.id.RecibirPrecio)
+        val btn = findViewById<Button>(R.id.btnMostrar)
+
         val btncarrito = findViewById<ImageButton>(R.id.btncarritoCompra)
         btncarrito.setOnClickListener {
             Toast.makeText(this,"Hola papu", Toast.LENGTH_SHORT).show()
         val bundle =intent.extras
         val taquito = bundle?.getString("taquitoo")
+
+        btn.setOnClickListener {
+            val admin  = AdminSQliteOpenHelper(this,"administracion",null,1)
+            val bd = admin.writableDatabase
+            val fila =bd.rawQuery("select  producto from productos",null)
+
+                txt1.setText(fila.getString(0))
+
+            bd.close()
+        }
+
+
 
     }
 }

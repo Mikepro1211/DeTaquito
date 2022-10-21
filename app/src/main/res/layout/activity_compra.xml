@@ -8,93 +8,7 @@
     tools:context=".compra"
     tools:openDrawer="start">
 
-    <androidx.coordinatorlayout.widget.CoordinatorLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-        <View
-            android:id="@+id/group_36"
-            android:layout_width="35dp"
-            android:layout_height="36dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="8dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="54dp"
-            android:background="@color/verdetaquito"
-            />
-    <!--imagen 1!-->
-        <ImageView
-            android:id="@+id/image_1"
-            android:layout_width="wrap_content"
-            android:layout_height="200dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="55dp"
-            android:background="@drawable/burrito" />
 
-        <TextView
-            android:id="@+id/tacos"
-            android:layout_width="65dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginLeft="16dp"
-            android:layout_marginTop="378dp"
-            android:gravity="top" />
-        <View
-            android:id="@+id/me_gusta_2"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="365dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="370dp"
-            android:background="@color/verdetaquito"
-            />
-        <View
-            android:id="@+id/rectangle_4"
-            android:layout_width="364dp"
-            android:layout_height="130dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="26dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="447dp"
-            android:background="@color/purple_700"
-            android:elevation="4dp"
-            />
-        <View
-            android:id="@+id/group_14"
-            android:layout_width="104dp"
-            android:layout_height="39dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="35dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="618dp"
-            android:background="@color/verdetaquito"
-            />
-        <TextView
-            android:id="@+id/some_id"
-            android:layout_width="63dp"
-            android:layout_height="28dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="302dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="622dp"
-            android:text="8.85"
-            android:gravity="top"
-            />
-        <View
-            android:id="@+id/group_32"
-            android:layout_width="364dp"
-            android:layout_height="52dp"
-            android:layout_alignParentLeft="true"
-            android:layout_marginLeft="25dp"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="717dp"
-            android:background="@color/precio"
-            />
-
-
-    </androidx.coordinatorlayout.widget.CoordinatorLayout>
     <include
         layout= "@layout/app_bar_main"
         android:layout_width="match_parent"
@@ -109,6 +23,30 @@
         >
 
     </com.google.android.material.navigation.NavigationView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtRecibirProducto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/RecibirPrecio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TextView" />
+
+        <Button
+            android:id="@+id/btnMostrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mostrar" />
+    </LinearLayout>
 
 
 </androidx.drawerlayout.widget.DrawerLayout>

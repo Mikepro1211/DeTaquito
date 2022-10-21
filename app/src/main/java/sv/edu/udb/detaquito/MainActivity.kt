@@ -1,15 +1,13 @@
 package sv.edu.udb.detaquito
 
+import android.content.ContentValues
 import android.content.Intent
 import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.Toast
-import android.widget.Toolbar
+import android.widget.*
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -31,6 +29,11 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.setHomeButtonEnabled(true)
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener (this)
+
+        /*Datos para base de tados*/
+        val orden_de_tacos =findViewById<TextView>(R.id.orden_de_tacos)
+        val precio = findViewById<TextView>(R.id.some_id)
+
         //Funcion carrito
         val btncarrito = findViewById<ImageButton>(R.id.btncarritoCompra)
         btncarrito.setOnClickListener {
@@ -47,8 +50,20 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         //funcion ordenar tacos
         val btnordentaco = findViewById<Button>(R.id.button_ordenar_taco)
         btnordentaco.setOnClickListener {
+            //base de datos
+            val admin =  AdminSQliteOpenHelper(this, name = "administracion",factory = null, version = 1)
+            val bd = admin.writableDatabase
+            val registro= ContentValues()
+            registro.put("producto",orden_de_tacos.getText().toString())
+            registro.put("precio",precio.getText().toString())
+            bd.insert("productos",null,registro)
+            bd.close()
+            Toast.makeText(this,"Se cargaron los datos del articulo",Toast.LENGTH_SHORT).show()
+
             val ordentacos = Intent(this,compra::class.java)
             startActivity(ordentacos)
+
+
 
         }
 
