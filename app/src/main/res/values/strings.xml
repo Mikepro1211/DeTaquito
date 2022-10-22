@@ -1,30 +1,73 @@
 <resources>
     <string name="app_name"></string>
+    <string name="titulo">DeTaquito</string>
     <string name="navigation_drawer_open">Open</string>
     <string name="navigation_drawer_close">Close</string>
-    <string name="para_comer_aqu_o_para_llevar_llevar">¿Para comer aquí o para llevar llevar?</string>
     <string name="title_activity_locaciones">Locaciones</string>
 
 
     <!--String de MainActivity-->
+
     <string name="comer">Order and eat</string>
-    <string name="ordenayaa">Ordena Ya!!</string>
-    <string name="ordenaBurrito">ORDEN DE BURRITO</string>
-    <string name="precio">Precio</string>
-    <string name="orden_de_ta">Orden de Tacos</string>
-    <string name="combo_famil">Combo Familiar</string>
+    <string name="Hamburtitulo">Delivery gratis</string>
+    <string name="Hamburtitulo2">1 de Nov - 10 Nov</string>
+    <string name="Hamburtitulo3">¡Ordenar ahora!</string>
+
+    <string name="TxtOrder">Order and eat</string>
+    <string name="TxtOrder2">Categorias</string>
+    <string name="TxtOrder3">Ofertas</string>
+
+    <string name="Txt1h">Tacos</string>
+    <string name="Txt2h">Burritos</string>
+    <string name="Txt3h">Tortas</string>
+    <string name="Txt4h">Bebidas</string>
+
+    <string name="Orden1">ORDEN DE BURRITOS</string>
+    <string name="Orden1.2">Papas, ensaladas y un burrito por $4.99</string>
+    <string name="BotonOrder1">AGREGAR</string>
+
+    <string name="Orden2">TORTA MEXICANA</string>
+    <string name="Orden2.1">Papas, ensaladas y un por $8.00</string>
+    <string name="BotonOrder2">AGREGAR</string>
+
+    <string name="Orden3">NACHOS</string>
+    <string name="Orden3.1">Nachos tan solo por $2.99</string>
+    <string name="BotonOrder3">AGREGAR</string>
+
+
+
 
     <!--String de Menu-->
-    <string name="nuestroMenu">Nuestro Menu</string>
-    <string name="menu">MENU</string>
-    <string name="sopa_tortilla">Sopa de Tortilla </string>
-    <string name="torta_mexicana">Torta Mexicana</string>
-    <string name="boton_agregar">Agregar</string>
-    <string name="quesadillas">Quesadillas</string>
-    <string name="enchilada">Enchilada</string>
-    <string name="posole">Posole</string>
-    <string name="titulo">DeTaquito</string>
-    <string name="oferta">$4.99</string>
+
+
+    <string name="TextMenu">Menú</string>
+    <string name="TextboxMenu">Gratis</string>
+    <string name="TextboxMenu2">10 - 20 min</string>
+    <string name="TextboxMenu3">4.8</string>
+
+
+
+    <string name="TXTComboBurrito">Combo Burrito</string>
+    <string name="txtComboB">$7.99</string>
+    <string name="textNachos">Nacho</string>
+    <string name="textBotonN">$3.99</string>
+    <string name="textBurritoT">Combo Burrito</string>
+    <string name="textBotonB">$6.99</string>
+    <string name="textComboTortas">Combo tortas</string>
+    <string name="textBotonC">$5.99</string>
+    <string name="textTacos">Tacos</string>
+    <string name="tacosBoton">$4.99</string>
+    <string name="textCoca">Coca cola</string>
+    <string name="CocaBoton">$1.00</string>
+    <string name="Vasopepsi">Vaso Pepsi</string>
+    <string name="BotonPepsi">$1.00</string>
+    <string name="TextRonCoca">Ron con coca</string>
+    <string name="RonBoton">$2.00</string>
+    <string name="txtQuesadilla">Quesadillas</string>
+    <string name="btnQuesadilla">$5.00</string>
+    <string name="textBaldeC">Cervezas</string>
+    <string name="btnBaldeC">$12.00</string>
+
 
 
 

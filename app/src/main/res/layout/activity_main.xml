@@ -9,7 +9,7 @@
     tools:openDrawer="start"
     >
 
-    //BARRA SCROLL
+    <!--BARRA SCROLLL-->
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_marginTop="56dp"
@@ -19,6 +19,9 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="match_parent">
+
+
+            <!--DELIVERY GRATIS BOX-->
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="wrap_content"
@@ -45,10 +48,10 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/textView2"
+                    android:id="@+id/Hamburtitulo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Delivery gratis"
+                    android:text="@string/Hamburtitulo"
                     android:textColor="@color/white"
                     android:textSize="20dp"
                     android:textStyle="bold"
@@ -60,7 +63,7 @@
                     app:layout_constraintVertical_bias="0.175" />
 
                 <com.airbnb.lottie.LottieAnimationView
-                    android:id="@+id/animationView"
+                    android:id="@+id/AnimacionJson"
                     android:layout_width="173dp"
                     android:layout_height="98dp"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -76,24 +79,24 @@
                     tools:ignore="MissingConstraints" />
 
                 <TextView
-                    android:id="@+id/textView3"
+                    android:id="@+id/Hamburtitulo2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="1 Octubre - 10 Noviembre"
+                    android:text="@string/Hamburtitulo2"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.924"
+                    app:layout_constraintHorizontal_bias="0.806"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
-                    app:layout_constraintVertical_bias="0.505" />
+                    app:layout_constraintVertical_bias="0.434" />
 
                 <TextView
-                    android:id="@+id/textView4"
+                    android:id="@+id/Hamburtitulo3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="¡Ordernar ahora!"
+                    android:text="@string/Hamburtitulo3"
                     android:textColor="@color/white"
                     android:textStyle="bold"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -106,10 +109,9 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/TxtOrder"
                 android:layout_width="153dp"
                 android:layout_height="wrap_content"
-
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="23dp"
@@ -119,22 +121,21 @@
                 android:textSize="20sp" />
 
 
+            <!--ICONOS DE CATEGORIA-->
+
+
             <TextView
-                android:id="@+id/textView5"
+                android:id="@+id/TextOrder2"
                 android:layout_width="100dp"
                 android:layout_height="24dp"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
-                android:layout_marginStart="21dp"
-                android:layout_marginTop="200dp"
-                android:text="Categorias"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="205dp"
+                android:text="@string/TxtOrder2"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
-
-
-            <!--ICONOS DE COMIDA-->
-
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="84dp"
@@ -146,7 +147,7 @@
                 android:background="@drawable/redondo">
 
                 <ImageView
-                    android:id="@+id/imageView4"
+                    android:id="@+id/Imagen1H"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -167,7 +168,7 @@
                 android:background="@drawable/redondo">
 
                 <ImageView
-                    android:id="@+id/imageView7"
+                    android:id="@+id/Imagen2H"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -190,7 +191,7 @@
                 android:background="@drawable/redondo">
 
                 <ImageView
-                    android:id="@+id/imageView8"
+                    android:id="@+id/Imagen3H"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -211,7 +212,7 @@
                 android:background="@drawable/redondo">
 
                 <ImageView
-                    android:id="@+id/imageView6"
+                    android:id="@+id/Imagen4H"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     app:layout_constraintBottom_toBottomOf="parent"
@@ -221,41 +222,46 @@
                     app:srcCompat="@drawable/icono4" />
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+
+
+            <!--PAQUETES DE OFERTAS BOX-->
+
+
             <TextView
-                android:id="@+id/textView6"
+                android:id="@+id/TxtOrder3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_below="@+id/textView5"
+                android:layout_below="@+id/TxtOrder"
                 android:layout_alignParentStart="true"
-                android:layout_marginStart="22dp"
-                android:layout_marginTop="205dp"
-                android:text="Ofertas"
+                android:layout_marginStart="21dp"
+                android:layout_marginTop="230dp"
+                android:text="@string/TxtOrder3"
                 android:textColor="@color/black"
                 android:textSize="18dp"
                 android:textStyle="bold" />
 
             <TextView
-                android:id="@+id/textView8"
+                android:id="@+id/Txt1h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="28dp"
                 android:layout_marginTop="365dp"
-                android:text="Tacos" />
+                android:text="@string/Txt1h" />
 
             <TextView
-                android:id="@+id/textView9"
+                android:id="@+id/Txt2h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
                 android:layout_alignParentTop="true"
                 android:layout_marginStart="123dp"
                 android:layout_marginTop="363dp"
-                android:text="Burritos" />
+                android:text="@string/Txt2h" />
 
             <TextView
-                android:id="@+id/textView11"
+                android:id="@+id/Txt3h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -265,7 +271,7 @@
                 android:text="Tortas" />
 
             <TextView
-                android:id="@+id/textView122"
+                android:id="@+id/Txt4h"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_alignParentStart="true"
@@ -289,54 +295,28 @@
 
 
                 <TextView
-                    android:id="@+id/textView13"
+                    android:id="@+id/Orden1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginEnd="32dp"
-                    android:text="ORDEN DE BURRITOS"
+                    android:text="@string/Orden1"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView152"
+                    android:id="@+id/Orden1.2"
                     android:layout_width="132dp"
                     android:layout_height="41dp"
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="32dp"
-                    android:text="Papas, ensaladas y un burrito por $4.99"
+                    android:text="@string/Orden1.2"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="83dp"
-                    android:layout_height="31dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-
-                    android:layout_marginTop="84dp"
-                    android:layout_marginEnd="52dp"
-                    android:background="@drawable/boton"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <TextView
-                        android:id="@+id/textView1"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Agregar"
-                        android:textColor="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.515"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
                 <ImageView
-                    android:id="@+id/imageView9"
+                    android:id="@+id/ImagenOferta1"
                     android:layout_width="170dp"
                     android:layout_height="114dp"
                     android:layout_marginStart="16dp"
@@ -344,6 +324,19 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/taco12" />
+
+                <Button
+                    android:id="@+id/BotonOrder1"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="44dp"
+                    android:background="@drawable/orange_light_banner"
+                    android:text="@string/BotonOrder1"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -360,54 +353,28 @@
                 android:background="@drawable/tabla">
 
                 <TextView
-                    android:id="@+id/textView17"
+                    android:id="@+id/Orden2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="12dp"
                     android:layout_marginEnd="36dp"
-                    android:text="TORTA MEXICANA"
+                    android:text="@string/Orden2"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView18"
+                    android:id="@+id/Orden2.1"
                     android:layout_width="132dp"
                     android:layout_height="41dp"
                     android:layout_marginTop="28dp"
                     android:layout_marginEnd="20dp"
-                    android:text="Papas, ensaladas y un por $4.99"
+                    android:text="@string/Orden2.1"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="83dp"
-                    android:layout_height="31dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-
-                    android:layout_marginTop="76dp"
-                    android:layout_marginEnd="52dp"
-                    android:background="@drawable/boton"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <TextView
-                        android:id="@+id/textView16"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Agregar"
-                        android:textColor="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.515"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
-
                 <ImageView
-                    android:id="@+id/imageView10"
+                    android:id="@+id/ImagenOferta2"
                     android:layout_width="189dp"
                     android:layout_height="113dp"
                     android:layout_marginStart="4dp"
@@ -415,6 +382,20 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/combo1" />
+
+                <Button
+                    android:id="@+id/BotonOrder2"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="44dp"
+                    android:background="@drawable/orange_light_banner"
+                    android:text="@string/BotonOrder2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -429,7 +410,7 @@
                 android:background="@drawable/tabla">
 
                 <TextView
-                    android:id="@+id/textView12"
+                    android:id="@+id/Orden3"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="8dp"
@@ -439,41 +420,15 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <TextView
-                    android:id="@+id/textView14"
+                    android:id="@+id/Orden3.1"
                     android:layout_width="132dp"
                     android:layout_height="41dp"
                     android:layout_marginTop="24dp"
                     android:layout_marginEnd="28dp"
-                    android:text="Nachos tan solo por $4.99"
+                    android:text="@string/Orden3.1"
                     android:textColor="@color/black"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
-                <androidx.constraintlayout.widget.ConstraintLayout
-                    android:layout_width="83dp"
-                    android:layout_height="31dp"
-                    android:layout_alignParentStart="true"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-
-                    android:layout_marginTop="76dp"
-                    android:layout_marginEnd="48dp"
-                    android:background="@drawable/boton"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent">
-
-                    <TextView
-                        android:id="@+id/textView15"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Agregar"
-                        android:textColor="@color/white"
-                        app:layout_constraintBottom_toBottomOf="parent"
-                        app:layout_constraintEnd_toEndOf="parent"
-                        app:layout_constraintHorizontal_bias="0.515"
-                        app:layout_constraintStart_toStartOf="parent"
-                        app:layout_constraintTop_toTopOf="parent" />
-                </androidx.constraintlayout.widget.ConstraintLayout>
 
                 <ImageView
                     android:id="@+id/imageView14"
@@ -484,6 +439,19 @@
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent"
                     app:srcCompat="@drawable/nachos1" />
+
+                <Button
+                    android:id="@+id/BotonOrder3"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="64dp"
+                    android:layout_marginEnd="44dp"
+                    android:background="@drawable/orange_light_banner"
+                    android:text="@string/BotonOrder3"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -503,32 +471,8 @@
             android:layout_height="wrap_content"
             android:orientation="vertical" />
 
-    <!--
-    <com.google.android.material.bottomappbar.BottomAppBar
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="#f6f6f6"
-        android:layout_gravity="bottom"
-        app:fabCradleMargin="8dp"
-        app:fabCradleRoundedCornerRadius="50dp"
-        app:fabCradleVerticalOffset="6dp"
-        tools:ignore="BottomAppBar">
 
-
-    </com.google.android.material.bottomappbar.BottomAppBar>
-
-   <com.google.android.material.floatingactionbutton.FloatingActionButton
-       android:layout_width="wrap_content"
-       android:layout_height="wrap_content"
-       android:backgroundTint="#ff5e00">
-
-   </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
-
--->
-
-
-    //BARRA DE ARRIBA
+    <!--BARRA DE ARRIBA  HEADER-->
 
     <include
         layout= "@layout/app_bar_main"
@@ -536,7 +480,7 @@
         android:layout_height="match_parent"/>
 
 
-    //BARRA DE NAVEGACION
+    <!--BARRA DE NAVEGACION-->
 
     <com.google.android.material.navigation.NavigationView
         android:id="@+id/nav_view"

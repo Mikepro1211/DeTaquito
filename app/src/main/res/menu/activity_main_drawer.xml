@@ -2,16 +2,16 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 <group>
     <item android:id="@+id/nav_item_one"
-        android:icon="@drawable/abc_vector_test"
+        android:icon="@drawable/iconooferta"
         android:title="Promociones"/>
     <item android:id="@+id/nav_item_two"
-        android:icon="@drawable/abc_vector_test"
+        android:icon="@drawable/iconocasa"
         android:title="Menú"/>
     <item android:id="@+id/nav_item_three"
-        android:icon="@drawable/abc_vector_test"
+        android:icon="@drawable/iconoestrella"
         android:title="Historial De Compras"/>
     <item android:id="@+id/nav_item_fourth"
-        android:icon="@drawable/abc_vector_test"
+        android:icon="@drawable/iconobusqueda"
         android:title="Restaurante"/>
 
 </group>
