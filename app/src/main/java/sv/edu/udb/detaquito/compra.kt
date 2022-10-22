@@ -5,10 +5,7 @@ import android.content.res.Configuration
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.MenuItem
-import android.widget.Button
-import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.Toast
+import android.widget.*
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
 import androidx.drawerlayout.widget.DrawerLayout
@@ -32,9 +29,11 @@ class compra : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         navigationView.setNavigationItemSelectedListener (this)
 
         //para datos  de tabla
-        val txt1 = findViewById<TextView>(R.id.txtRecibirProducto)
-        val txt2 = findViewById<TextView>(R.id.RecibirPrecio)
-        val btn = findViewById<Button>(R.id.btnMostrar)
+         val txt  = findViewById<TextView>(R.id.Recibir)
+         val bundle = intent.extras
+        val dato = bundle?.getString("nombre")
+         txt.setText(dato)
+
 
         val btncarrito = findViewById<ImageButton>(R.id.btncarritoCompra)
         btncarrito.setOnClickListener {
@@ -42,15 +41,9 @@ class compra : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListe
         val bundle =intent.extras
         val taquito = bundle?.getString("taquitoo")
 
-        btn.setOnClickListener {
-            val admin  = AdminSQliteOpenHelper(this,"administracion",null,1)
-            val bd = admin.writableDatabase
-            val fila =bd.rawQuery("select  producto from productos",null)
+        //btn.setOnClickListener {
 
-                txt1.setText(fila.getString(0))
-
-            bd.close()
-        }
+        //}
 
 
 

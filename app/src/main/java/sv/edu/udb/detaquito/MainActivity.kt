@@ -29,7 +29,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.setHomeButtonEnabled(true)
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener (this)
-
         /*Datos para base de tados*/
         val orden_de_tacos =findViewById<TextView>(R.id.orden_de_tacos)
         val precio = findViewById<TextView>(R.id.some_id)
@@ -44,14 +43,19 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         val btnordenayaa = findViewById<Button>(R.id.ordenayaa)
         btnordenayaa.setOnClickListener {
             val llevarmenu = Intent(this,Menu::class.java)
+            llevarmenu.putExtra("nombre",orden_de_tacos.getText())
+            llevarmenu.putExtra("precio",precio.text )
             startActivity(llevarmenu)
         }
 
         //funcion ordenar tacos
         val btnordentaco = findViewById<Button>(R.id.button_ordenar_taco)
         btnordentaco.setOnClickListener {
+
+
+
             //base de datos
-            val admin =  AdminSQliteOpenHelper(this, name = "administracion",factory = null, version = 1)
+           /* val admin =  AdminSQliteOpenHelper(this, name = "administracion",factory = null, version = 1)
             val bd = admin.writableDatabase
             val registro= ContentValues()
             registro.put("producto",orden_de_tacos.getText().toString())
@@ -59,7 +63,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
             bd.insert("productos",null,registro)
             bd.close()
             Toast.makeText(this,"Se cargaron los datos del articulo",Toast.LENGTH_SHORT).show()
-
+            */
             val ordentacos = Intent(this,compra::class.java)
             startActivity(ordentacos)
 
