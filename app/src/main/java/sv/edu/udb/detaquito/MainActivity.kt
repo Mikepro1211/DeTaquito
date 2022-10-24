@@ -32,8 +32,6 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
         supportActionBar?.setHomeButtonEnabled(true)
         //variable firebase
         val myRef = database.getReference("Producto")
-
-
         val navigationView: NavigationView = findViewById(R.id.nav_view)
         navigationView.setNavigationItemSelectedListener (this)
         //Funcion carrito
@@ -62,6 +60,7 @@ class MainActivity : AppCompatActivity(), NavigationView.OnNavigationItemSelecte
        val btnNacho =findViewById<Button>(R.id.BotonOrder3)
        val Nacho=  "Nacho"
        val precioNacho= 2.99
+
 
        btnNacho.setOnClickListener {
            val agregarNacho= Producto(Nacho.toString(),precioNacho.toString())
