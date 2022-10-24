@@ -7,3 +7,13 @@
   
 # Base de Dato 
    Firebase
+   
+# Porcentaje del Proyecto 
+  100%
+# Evaluacion Personal 
+  Miguel Perez      100%
+  Luis  Lovo        100%
+ 
+#Aplicacion 
+  Funcional en Rama BaseDato
+  
