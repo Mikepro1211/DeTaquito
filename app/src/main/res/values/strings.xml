@@ -35,8 +35,6 @@
     <string name="BotonOrder3">AGREGAR</string>
 
 
-
-
     <!--String de Menu-->
 
 
@@ -44,7 +42,6 @@
     <string name="TextboxMenu">Gratis</string>
     <string name="TextboxMenu2">10 - 20 min</string>
     <string name="TextboxMenu3">4.8</string>
-
 
 
     <string name="TXTComboBurrito">Combo Burrito</string>
@@ -67,9 +64,6 @@
     <string name="btnQuesadilla">$5.00</string>
     <string name="textBaldeC">Cervezas</string>
     <string name="btnBaldeC">$12.00</string>
-
-
-
 
 
 </resources>

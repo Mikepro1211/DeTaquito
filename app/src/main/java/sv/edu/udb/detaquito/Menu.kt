@@ -7,6 +7,7 @@ import android.os.Bundle
 import android.view.MenuItem
 import android.widget.Button
 import android.widget.ImageButton
+import android.widget.ImageView
 import android.widget.Toast
 import androidx.appcompat.app.ActionBarDrawerToggle
 import androidx.core.view.GravityCompat
@@ -36,6 +37,11 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             Toast.makeText(this,"Hola papu",Toast.LENGTH_SHORT).show()
         }
 
+        /*val h1 = findViewById<ImageView>(R.id.Imagen1H)
+        h1.setOnClickListener{
+            Toast.makeText(this,"Hola papurri",Toast.LENGTH_SHORT).show()
+        }*/
+
         /*
         val compra1 = findViewById<Button>(R.id.btnagregar_uno)
         compra1.setOnClickListener {
@@ -59,7 +65,8 @@ class Menu : AppCompatActivity(), NavigationView.OnNavigationItemSelectedListene
             }
             R.id.nav_item_three ->
             {
-                Toast.makeText(this,"Hola papu",Toast.LENGTH_SHORT).show()
+                val comprita = Intent(this,comprita::class.java)
+                startActivity(comprita)
 
             }
 

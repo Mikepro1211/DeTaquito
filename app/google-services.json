@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "983416469959",
+    "project_id": "detaquito-fd51d",
+    "storage_bucket": "detaquito-fd51d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:983416469959:android:024089e0c8c753e8b501e2",
+        "android_client_info": {
+          "package_name": "sv.edu.udb.detaquito"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "983416469959-8g0b40bn6em7c9nnpab65082onnpkgie.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA_ael3IinEieIkMwLNT5Z6jokqsmYD6II"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "983416469959-8g0b40bn6em7c9nnpab65082onnpkgie.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

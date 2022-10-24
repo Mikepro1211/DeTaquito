@@ -13,6 +13,9 @@
     <item android:id="@+id/nav_item_fourth"
         android:icon="@drawable/iconobusqueda"
         android:title="Restaurante"/>
+    <item android:id="@+id/prueba"
+        android:icon="@drawable/iconobusqueda"
+        android:title="Prueba"/>
 
 </group>
 

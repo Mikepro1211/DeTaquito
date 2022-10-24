@@ -294,6 +294,29 @@
                 android:background="@drawable/tabla">
 
 
+                <Button
+                    android:id="@+id/BotonOrder1"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="80dp"
+                    android:layout_marginEnd="44dp"
+                    android:background="@drawable/orange_light_banner"
+                    android:text="@string/BotonOrder1"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ImagenOferta1"
+                    android:layout_width="170dp"
+                    android:layout_height="114dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/taco12" />
+
                 <TextView
                     android:id="@+id/Orden1"
                     android:layout_width="wrap_content"
@@ -315,29 +338,6 @@
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
-                <ImageView
-                    android:id="@+id/ImagenOferta1"
-                    android:layout_width="170dp"
-                    android:layout_height="114dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginTop="4dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/taco12" />
-
-                <Button
-                    android:id="@+id/BotonOrder1"
-                    android:layout_width="88dp"
-                    android:layout_height="37dp"
-                    android:layout_marginTop="80dp"
-                    android:layout_marginEnd="44dp"
-                    android:background="@drawable/orange_light_banner"
-                    android:text="@string/BotonOrder1"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
             </androidx.constraintlayout.widget.ConstraintLayout>
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -351,6 +351,29 @@
                 android:layout_marginTop="610dp"
                 android:layout_marginEnd="27dp"
                 android:background="@drawable/tabla">
+
+                <Button
+                    android:id="@+id/BotonOrder2"
+                    android:layout_width="88dp"
+                    android:layout_height="37dp"
+                    android:layout_marginTop="68dp"
+                    android:layout_marginEnd="44dp"
+                    android:background="@drawable/orange_light_banner"
+                    android:text="@string/BotonOrder2"
+                    android:textColor="@color/white"
+                    android:textSize="15dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/ImagenOferta2"
+                    android:layout_width="189dp"
+                    android:layout_height="113dp"
+                    android:layout_marginStart="4dp"
+                    android:layout_marginTop="4dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:srcCompat="@drawable/combo1" />
 
                 <TextView
                     android:id="@+id/Orden2"
@@ -370,29 +393,6 @@
                     android:layout_marginEnd="20dp"
                     android:text="@string/Orden2.1"
                     android:textColor="@color/black"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <ImageView
-                    android:id="@+id/ImagenOferta2"
-                    android:layout_width="189dp"
-                    android:layout_height="113dp"
-                    android:layout_marginStart="4dp"
-                    android:layout_marginTop="4dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent"
-                    app:srcCompat="@drawable/combo1" />
-
-                <Button
-                    android:id="@+id/BotonOrder2"
-                    android:layout_width="88dp"
-                    android:layout_height="37dp"
-                    android:layout_marginTop="68dp"
-                    android:layout_marginEnd="44dp"
-                    android:background="@drawable/orange_light_banner"
-                    android:text="@string/BotonOrder2"
-                    android:textColor="@color/white"
-                    android:textSize="15dp"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 

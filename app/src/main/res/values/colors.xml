@@ -10,5 +10,6 @@
     <color name="verdetaquito">#007A53</color>
     <color name="backgroundmenu">#D9D9D9</color>
     <color name="precio">#B51414</color>
+    <color name= "placeholder_bg">#dddddd</color>
 
 </resources>
